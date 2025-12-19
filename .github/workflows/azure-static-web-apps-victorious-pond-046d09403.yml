@@ -36,7 +36,7 @@ jobs:
           # Azure AD / Entra ID Configuration
           VITE_AZURE_CLIENT_ID: ce3b6019-7ceb-4f76-8169-d3272b30d216
           VITE_AZURE_TENANT_ID: 93838cca-6334-421f-83b8-8727c93326e3
-          VITE_AZURE_REDIRECT_URI: "https://victorious-pond-046d09403.azurestaticapps.net"
+          VITE_AZURE_REDIRECT_URI: "https://victorious-pond-046d09403.3.azurestaticapps.net"
           VITE_API_BASE_URL: "https://app-image-cropper-test-westeurope-001-gqexceh6fycbctf6.westeurope-01.azurewebsites.net/api"
 
   close_pull_request_job:
