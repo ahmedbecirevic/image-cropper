@@ -1,6 +1,7 @@
 # Image Cropper Full Stack Application
 
 A modern full-stack application for image cropping with logo overlay functionality, built with Vue 3 frontend and .NET 8 Web API backend.
+Access the deployed app at [here](https://victorious-pond-046d09403.3.azurestaticapps.net/) 
 
 ## Features
 
@@ -81,13 +82,6 @@ kd/
    - Backend API: http://localhost:8080
    - Swagger Documentation: http://localhost:8080/swagger
 
-### Run Backend Only (for Frontend Development)
-
-```bash
-docker-compose -f docker-compose.backend.yml up --build
-```
-
-This runs only the backend API and PostgreSQL database, allowing you to develop the frontend locally.
 
 ## Local Development
 
