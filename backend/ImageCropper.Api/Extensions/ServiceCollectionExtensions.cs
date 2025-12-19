@@ -89,18 +89,10 @@ public static class ServiceCollectionExtensions
     {
         services.AddCors(options =>
         {
-            options.AddPolicy("AllowAll",
+            options.AddPolicy("corsPolicy",
                 policy =>
                 {
-                    policy.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
-                });
-
-            options.AddPolicy("Development",
-                policy =>
-                {
-                    policy.WithOrigins("http://localhost:3000", "http://localhost:5173")
+                    policy.WithOrigins("http://localhost:3000", "http://localhost:5173", "https://victorious-pond-046d09403.3.azurestaticapps.net")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials();

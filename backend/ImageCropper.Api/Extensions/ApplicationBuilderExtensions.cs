@@ -7,7 +7,7 @@ public static class ApplicationBuilderExtensions
 {
     public static void UseSwaggerDocumentation(this IApplicationBuilder app, IWebHostEnvironment env)
     {
-        if (!env.IsDevelopment()) return;
+        // if (!env.IsDevelopment()) return;
         app.UseSwagger();
         app.UseSwaggerUI(c =>
         {
@@ -19,7 +19,7 @@ public static class ApplicationBuilderExtensions
 
     public static void UseCorsPolicy(this IApplicationBuilder app, IWebHostEnvironment env)
     {
-        app.UseCors(env.IsDevelopment() ? "Development" : "AllowAll");
+        app.UseCors("corsPolicy");
     }
 
     public static async Task RunDatabaseMigrationsAsync(this IApplicationBuilder app)
